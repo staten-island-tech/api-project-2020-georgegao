@@ -1,7 +1,7 @@
-import { genres } from "./genre";
+////import { genres } from "./genre";
 
 const DOMSelectors = {
-  grid: document.querySelector(".movie-grid"),
+  grid: document.querySelector(".game-grid"),
 };
 
 ///const key = `1fd276ec57b4baedacae00246e5cf4b7`;
@@ -12,7 +12,7 @@ const init = async function () {
     const response = await fetch(query);
     const data = await response.json();
 
-    data.results.forEach((movie) => {
+    data.results.forEach((game) => {
       let genreArr = [];
       const addGenre = function () {
         genres.forEach((element) => {
@@ -25,29 +25,31 @@ const init = async function () {
       addGenre();
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
-        `<div class="movie-card">
-      <div class="movie-card-front">
+        `<div class="game-card">
+      <div class="game-card-front">
         <img
-          src="https://image.tmdb.org/t/p/w300/${movie.poster_path}"
+          src="https://images.greenmangaming.com/${game.}.jpg
+          "
           alt=""
           class="poster"
         />
       </div>
-      <div class="movie-card-back">
-        <h3 class="movie-card-header">${movie.original_title}</h3>
-        <div class="score-box">
-          <p class="user-score">Community Score</p>
-          <p class="user-score">${movie.vote_average}</p>
+      <div class="game-card-back">
+        <h3 class="game-card-header">${game.title}</h3>
+        <div class="deals">
+          <p class="best-deal">Best Deal</p>
+          <p class="best-deal">${game.salePrice}</p>
         </div>
 
-        <div class="release-box">
-          <p class="release-date">Released</p>
-          <p class="release-date">${movie.release_date}</p>
+        <div class="regular-price">
+          <p class="normal-price">Normal Price</p>
+          <p class="normal-price">${game.normalPrice}</p>
         </div>
 
-        <div class="movie-genres">
-          <div>${genreArr}</div>
-        </div>
+        <div class="rating">
+          <p class="deal-rating">Deal Rating</p>
+          <p class="deal-rating">${game.dealRating}</p>
+        
       </div>
     </div>`
       );
