@@ -27,12 +27,7 @@ const init = async function () {
         "beforeend",
         `<div class="game-card">
       <div class="game-card-front">
-        <img
-          src="https://images.greenmangaming.com/${game.}.jpg
-          "
-          alt=""
-          class="poster"
-        />
+
       </div>
       <div class="game-card-back">
         <h3 class="game-card-header">${game.title}</h3>
