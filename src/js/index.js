@@ -23,8 +23,15 @@ const init = async function () {
         });
       };
       addGenre();
+      
+    const searchBar = document.getElementById("searchBar");
+    searchBar.addEventListener("keyup", e => { 
+      const searchString = e.target.value; 
+    });
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
+        
+        
         `<div class="game-card">
       <div class="game-card-front">
 
