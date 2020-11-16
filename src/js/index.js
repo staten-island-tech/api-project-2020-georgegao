@@ -11,26 +11,14 @@ const init = async function () {
   try {
     const response = await fetch(query);
     const data = await response.json();
-
-    data.results.forEach((game) => {
-      let genreArr = [];
-      const addGenre = function () {
-        genres.forEach((element) => {
-          if (movie.genre_ids.includes(element.id)) {
-            genreArr.push(element.name);
-            return genreArr;
-          }
-        });
-      };
-      addGenre();
-      
-    const searchBar = document.getElementById("searchBar");
-    searchBar.addEventListener("onkeypress", function(e) {
-      if (e.key === 'Enter')  {
+    console.log(data);
+      const searchBar = document.getElementById("searchBar");
+      console.log(searchBar);
+      searchBar.addEventListener("keyup", function() {
         console.log("a");
-      }
-      const searchString = e.target.value; //
-    });
+    
+        //const searchString = e.target.value; //
+      });
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         
@@ -59,7 +47,7 @@ const init = async function () {
     </div>`
     
       );
-    });
+   
   } catch (error) {
     console.log(error);
   }
