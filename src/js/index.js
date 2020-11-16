@@ -25,8 +25,11 @@ const init = async function () {
       addGenre();
       
     const searchBar = document.getElementById("searchBar");
-    searchBar.addEventListener("keyup", e => { 
-      const searchString = e.target.value; 
+    searchBar.addEventListener("onkeypress", function(e) {
+      if (e.key === 'Enter')  {
+        console.log("a");
+      }
+      const searchString = e.target.value; //
     });
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
@@ -54,6 +57,7 @@ const init = async function () {
         
       </div>
     </div>`
+    
       );
     });
   } catch (error) {
