@@ -1,5 +1,3 @@
-////import { genres } from "./genre";
-
 const DOMSelectors = {
   grid: document.querySelector(".game-grid"),
 };
@@ -11,28 +9,21 @@ const init = async function () {
   try {
     const response = await fetch(query);
     const data = await response.json();
-
-    data.results.forEach((game) => {
-      let genreArr = [];
-      const addGenre = function () {
-        genres.forEach((element) => {
-          if (movie.genre_ids.includes(element.id)) {
-            genreArr.push(element.name);
-            return genreArr;
-          }
-        });
-      };
-      addGenre();
+    console.log(data);
+      const searchBar = document.getElementById("searchBar");
+      console.log(searchBar);
+      searchBar.addEventListener("keyup", function() {
+        console.log("a");
+    
+        //const searchString = e.target.value; //
+      });
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
+        
+        
         `<div class="game-card">
       <div class="game-card-front">
-        <img
-          src="https://images.greenmangaming.com/${game.}.jpg
-          "
-          alt=""
-          class="poster"
-        />
+
       </div>
       <div class="game-card-back">
         <h3 class="game-card-header">${game.title}</h3>
@@ -52,8 +43,9 @@ const init = async function () {
         
       </div>
     </div>`
+    
       );
-    });
+   
   } catch (error) {
     console.log(error);
   }
