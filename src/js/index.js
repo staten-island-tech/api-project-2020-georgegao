@@ -1,5 +1,3 @@
-////import { genres } from "./genre";
-
 const DOMSelectors = {
   grid: document.querySelector(".game-grid"),
 };
