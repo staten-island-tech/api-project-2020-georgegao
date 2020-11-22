@@ -17,10 +17,10 @@ const init = async function () {
     
         //const searchString = e.target.value; //
       });
-      DOMSelectors.grid.insertAdjacentHTML(
+    DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
 
-    <div class="game-card"> 
+    `<div class="game-card"> 
       <div class="game-card-front">
       </div>
 
@@ -42,7 +42,7 @@ const init = async function () {
           <p class="deal-rating">${game.dealRating}</p>
         
       </div>
-        </div>
+        </div>`
        
       
     
