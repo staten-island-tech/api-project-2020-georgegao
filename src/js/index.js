@@ -13,23 +13,23 @@ const init = async function () {
       const searchBar = document.getElementById("searchBar");
       console.log(searchBar);
       searchBar.addEventListener("keyup", function() {
-        console.log("a");
+        console.log("Yes");
     
         //const searchString = e.target.value; //
       });
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
-        
-        
-        `<div class="game-card">
-      <div class="game-card-front">
 
+    <div class="game-card"> 
+      <div class="game-card-front">
       </div>
-      <div class="game-card-back">
+
+        <div class="game-card-back">
         <h3 class="game-card-header">${game.title}</h3>
         <div class="deals">
           <p class="best-deal">Best Deal</p>
           <p class="best-deal">${game.salePrice}</p>
+        </div>
         </div>
 
         <div class="regular-price">
@@ -42,12 +42,14 @@ const init = async function () {
           <p class="deal-rating">${game.dealRating}</p>
         
       </div>
-    </div>`
+        </div>
+       
+      
     
       );
    
   } catch (error) {
     console.log(error);
   }
-};
+}
 init();
