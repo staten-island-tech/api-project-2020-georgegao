@@ -2,7 +2,6 @@ const DOMSelectors = {
   grid: document.querySelector(".game-grid"),
 };
 
-///const key = `1fd276ec57b4baedacae00246e5cf4b7`;
 const query = `https://www.cheapshark.com/api/1.0/deals?`;
 
 const init = async function () {
@@ -12,10 +11,10 @@ const init = async function () {
     console.log(data);
       const searchBar = document.getElementById("searchBar");
       console.log(searchBar);
-      searchBar.addEventListener("keyup", function() {
+      searchBar.addEventListener("keyup", function(game) {
         console.log("Yes");
-    
-        //const searchString = e.target.value; //
+        
+        const searchString = game.target.value; 
       });
     DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
