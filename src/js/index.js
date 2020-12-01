@@ -14,11 +14,12 @@ const init = async function () {
       searchBar.addEventListener("keyup", function(game) {
         console.log("Yes");
         if (game.key === 'Enter'){
+          DOMSelectors.grid.innerHTML = '';
           let val = searchBar.value;
           console.log(val);
           
           let data2 = data.filter(d =>
-            d.title.toLowerCase().replace(/\s/g, '').includes(val.toLowerCase().replace(/\s/g, ''))      //bruh htis some funy ky
+            d.title.toLowerCase().replace(/\s/g, '').includes(val.toLowerCase().replace(/\s/g, ''))     
           );
           console.log(data2);
 
