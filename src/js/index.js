@@ -19,7 +19,7 @@ const init = async function () {
           console.log(val);
           
           let data2 = data.filter(d =>
-            d.title.toLowerCase().replace(/\s/g, '').includes(val.toLowerCase().replace(/\s/g, ''))     
+            d.title.toLowerCase().replace(/\s/g, '').includes(val.toLowerCase().replace(/\s/g, ''))    
           );
           console.log(data2);
 
