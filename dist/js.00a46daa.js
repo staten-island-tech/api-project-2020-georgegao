@@ -152,8 +152,6 @@ const init = async function init() {
           });
         }
       }
-
-      const searchString = game.target.value;
     });
   } catch (error) {
     console.log(error);

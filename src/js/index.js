@@ -77,17 +77,12 @@ const init = async function () {
                   
                 </div>`
              
-            
-          
               );
-            
             });
           }
-        }
-        const searchString = game.target.value; 
+        } 
       });
 
-   
   } catch (error) {
     console.log(error);
   }
