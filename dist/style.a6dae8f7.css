@@ -1,0 +1,118 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #500000;
+}
+
+.encompass {
+  background-color: #500000;
+  height: 100rem;
+  width: 100vw;
+}
+
+.header {
+  font-size: 5.2rem;
+  color: #dcae96;
+  margin: 0rem auto;
+  text-align: center;
+  height: 8rem;
+  height: 10vh;
+  width: 70vw;
+}
+
+.top-rated {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  font-size: 3.8rem;
+  color: #dcae96;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem auto;
+  padding: 3rem auto;
+  align-items: center;
+  width: 40vw;
+  height: 70vh auto;
+  background-color: brown;
+  flex-direction: column;
+}
+
+.space1 {
+  height: 2vh;
+  width: 2vw;
+}
+
+.thumbnail {
+  height: 0%;
+  background-position: center;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 1rem auto;
+  color: #dcae96;
+  text-align: center;
+}
+
+.best-deal {
+  text-align: center;
+  font-size: 1rem;
+  color: #dcae96;
+}
+
+.normal-price {
+  text-align: center;
+  font-size: 1rem;
+  color: #dcae96;
+}
+
+.deal-rating {
+  text-align: center;
+  font-size: 1rem;
+  color: #dcae96;
+}
+
+.deals-price-ratings {
+  display: flex;
+  flex-direction: row;
+}
+
+#searchBar {
+  width: 80vw;
+  height: 10vh;
+  position: relative;
+  left: 10vw;
+  border-radius: 10px;
+  border: 5px solid #dcae96;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.s_req {
+  display: flex;
+  text-align: center;
+  color: #dcae96;
+  font-size: 8vh;
+  background-color: transparent;
+  margin-top: 2vh;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
