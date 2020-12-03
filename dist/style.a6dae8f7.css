@@ -14,7 +14,7 @@ body {
 
 .encompass {
   background-color: #500000;
-  height: 100rem;
+  min-height: 100vh;
   width: 100vw;
 }
 
