@@ -19,7 +19,6 @@ body {
   background-color:  rgb(77, 24, 15);
   height: 100rem;
   width: 100vw;
-  
 }
 
 .header {
@@ -27,7 +26,9 @@ body {
   color: rgb(220, 174, 150);
   margin: 0rem auto;
   text-align: center;
-  height: 20rem;
+  height: 8rem;
+  height: 10vh;
+  width: 70vw;
 }
 
 .top-rated {
@@ -36,95 +37,83 @@ body {
   font-size: 3.8rem;
   color: rgb(220, 174, 150);
 }
+
 .game-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 90vw;
-  columns: rgb(220, 174, 150);
   margin: 1rem auto;
   padding: 3rem auto;
   align-items: center;
+  width: 40vw;
+  height: 70vh auto;
+  background-color: brown;
+  flex-direction: column;
 }
 
-.game-card {
-  height: 65vh;
-  width: 20vw;
-  margin: 0 auto;
-  position: relative;
-  margin: 8rem auto;
- 
+.space1{
+  height: 2vh;
+  width: 2vw;
 }
-.game-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+
+.thumbnail {
+  height: 0%;
   background-position: center;
-  transition: all 0.3s;
+  //transition: all 0.3s;
 }
-.poster {
+.thumb {
   width: 100%;
   height: 100%;
 }
-.game-card-front {
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: rgb(220, 174, 150);
-  ///background-color: rgba(33, 33, 33, 0.8);
-  width: 100%;
-  height: 100%;
-}
-.game-card-header {
-  font-size: 2.4rem;
-  text-transform: uppercase;
+
+.game-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
   margin: 1rem auto;
   color: rgb(220, 174, 150);
   text-align: center;
 }
+
 .best-deal{
   text-align: center;
   font-size: 1rem;
   color: rgb(220, 174, 150);
 }
-.score-box,
-.release-box {
+
+.normal-price{
   text-align: center;
+  font-size: 1rem;
+  color: rgb(220, 174, 150);
 }
 
-
-.game-card:hover .game-card-back {
-  z-index: 1;
+.deal-rating{
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(220, 174, 150);
 }
-.game-card:hover .game-card-front {
-  z-index: 2;
+
+.deals-price-ratings{
   display: flex;
+  flex-direction: row;
 }
-.test {
-  color: black;
-  font-size: 3rem;
-}
+
 #searchBar {
   width: 80vw;
-  height: 5vh;
+  height: 10vh;
   position: relative;
   left: 10vw;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 1px solid #eaeaea;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .s_req{
+  display: flex;
+  text-align: center;
   color: rgb(220, 174, 150);
   font-size: 8vh;
   background-color: transparent;
   margin-top: 2vh;
+  text-transform: capitalize;
 }

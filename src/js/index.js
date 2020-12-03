@@ -27,7 +27,7 @@ const init = async function () {
             DOMSelectors.grid.insertAdjacentHTML(
               "beforeend", 
       
-              `<div class = "s_req">no matching items found</div>`
+              `<div class = "s_req">no matching items found!</div>`
               
             );
           
@@ -35,7 +35,7 @@ const init = async function () {
             DOMSelectors.grid.insertAdjacentHTML(
               "beforeend", 
       
-              `<div class = "s_req">empty field error</div>`
+              `<div class = "s_req">empty field error!</div>`
               
             );
             data2 = [];
@@ -44,34 +44,37 @@ const init = async function () {
             data2.forEach(output => {
               DOMSelectors.grid.insertAdjacentHTML(
                 "beforeend", 
-      
-                `<div class="game-card"> 
-                  <div class="game-card-front">
+                
+                  `<div class="space1"></div>
+                  
+                  <div class="thumbnail">
+                    <img src= ${output.thumb} alt="" class="thumb"/>
                   </div>
-      
-                  <div class="game-card-back">
-                    <img
-                    src= ${output.thumb}
-                    alt=""
-                    class="poster"
-                    />
-                    <h3 class="game-card-header">${output.title}</h3>
+                    
+                  <div class="game-title">${output.title}</div>
+                  
+                  <div class="deals-price-ratings">
                     <div class="deals">
                       <p class="best-deal">Best Deal</p>
                       <p class="best-deal">${output.salePrice}</p>
                     </div>
-                  </div>
+
+                    <div class="space1"></div>
+
+                    <div class="regular-price">
+                      <p class="normal-price">Normal Price</p>
+                      <p class="normal-price">${output.normalPrice}</p>
+                    </div>
       
-                  <div class="regular-price">
-                    <p class="normal-price">Normal Price</p>
-                    <p class="normal-price">${output.normalPrice}</p>
+                    <div class="space1"></div>
+
+                    <div class="rating">
+                      <p class="deal-rating">Deal Rating</p>
+                      <p class="deal-rating">${output.dealRating}</p>            
+                    </div>
                   </div>
-      
-                  <div class="rating">
-                    <p class="deal-rating">Deal Rating</p>
-                    <p class="deal-rating">${output.dealRating}</p>
-              
-                  </div>
+                  
+                  
                 </div>`
              
             
