@@ -9,35 +9,44 @@ body {
   font-family: $font-second;
   font-weight: 500;
 
-  background-image: url(dist/media/r13k7jomtf161.jpg);
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: gray;
+  color: rgb(77, 24, 15);
+}
+
+.encompass {
+  background-color:  rgb(77, 24, 15);
+  height: 100rem;
+  width: 100vw;
+  
 }
 
 .header {
   font-size: 5.2rem;
-  color: white;
-  margin: 3rem auto;
+  color: rgb(220, 174, 150);
+  margin: 0rem auto;
   text-align: center;
+  height: 20rem;
 }
+
 .top-rated {
   margin: 1rem auto 2rem auto;
   text-align: center;
   font-size: 3.8rem;
-  color: white;
+  color: rgb(220, 174, 150);
 }
 .game-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90vw;
- 
+  columns: rgb(220, 174, 150);
   margin: 1rem auto;
   padding: 3rem auto;
   align-items: center;
 }
+
 .game-card {
   height: 65vh;
   width: 20vw;
@@ -68,8 +77,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: white;
-  background-color: rgba(33, 33, 33, 0.8);
+  color: rgb(220, 174, 150);
+  ///background-color: rgba(33, 33, 33, 0.8);
   width: 100%;
   height: 100%;
 }
@@ -77,13 +86,13 @@ body {
   font-size: 2.4rem;
   text-transform: uppercase;
   margin: 1rem auto;
-  color: white;
+  color: rgb(220, 174, 150);
   text-align: center;
 }
 .best-deal{
   text-align: center;
   font-size: 1rem;
-  color: white;
+  color: rgb(220, 174, 150);
 }
 .score-box,
 .release-box {
@@ -114,8 +123,7 @@ body {
 }
 
 .s_req{
-  color: black;
- 
+  color: rgb(220, 174, 150);
   font-size: 8vh;
   background-color: transparent;
   margin-top: 2vh;

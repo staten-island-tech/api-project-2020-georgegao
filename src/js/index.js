@@ -15,11 +15,11 @@ const init = async function () {
         console.log("Yes");
         if (game.key === 'Enter'){
           DOMSelectors.grid.innerHTML = '';
-          let val = searchBar.value;
+          const val = searchBar.value;
           console.log(val);
           val_processed = val.toLowerCase().replace(/\s/g, '');
           
-          let data2 = data.filter(d =>
+          const data2 = data.filter(d =>
             d.title.toLowerCase().replace(/\s/g, '').includes(val_processed)    
           );
           console.log(data2);
